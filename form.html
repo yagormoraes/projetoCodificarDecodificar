@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Codificador/Decodificador</title>
+    <link href='./style.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <p class="header__text">Critpografia Bacana</p>
+        <div class="header__div">
+            <p class="header__text"><a href="#">Email</a></p>
+            <p class="header__text"><a href="#">LinkedIn</a></p>
+            <p class="header__text"><a href="#">Github</a></p>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <fieldset class="msgField">
+                <div>
+                    <label for="msg" >Digite sua mensagem:</label><br>
+                    <textarea id="msg" name="msg" rows="10" cols="30" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="typeField">
+                <label for="typeCod">Escolha o método:</label><br>
+                <select id="typeCod" name="typeCod" required>
+                    <option value="typeEscolha">   </option>
+                    <option value="typeCodCesar">Cifra de César</option>
+                    <option value="typeCodBase64">Base 64</option>
+                </select><br>
+                <div class="seletorCesar">
+                    <label for="qtdCesar">Coloque o passo que deseja variando entre 1 a 26</label><br>
+                    <input type="number" name="qtdCesar" id="qtdCesar" min=1 max=26>
+                </div>
+                
+            </fieldset>
+
+            <fieldset class="codField">
+                <p>Você quer codificar ou decodificar?</p>
+                <div class="radioSelector">
+                    <input type='radio' name='cod' value='coding' class="codificar">Codificar<br>       
+                    <input type='radio' name='cod' value='decoding' class="codificar">Decodificar<br>  
+                </div>
+                
+                <div class="codField__button">
+                    <button type="button" class="codField__button__coding" onclick="digitarResultado()">Codificar</button>
+                    <button type="button" class="codField__button__decoding" onclick="digitarResultado()">Decodificar</button>
+                </div>
+            </fieldset>
+
+            <p class="resultado"></p>
+        </form>
+    
+
+    </main>
+
+    <footer>
+        <p class="footer__text">Project by Yago R. de Moraes</p><br>
+        <p class="footer__text"> Direitos Autoriais (c) - Para fins educacionais</p>
+    </footer>
+    <script src="./form.js"></script>
+</body>
+</html>
