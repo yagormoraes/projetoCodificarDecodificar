@@ -2,11 +2,12 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-
+    font-family: 'Fira Code', monospace;;
 }
 
 body{
-    height: 721px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -17,29 +18,41 @@ body{
 header{
     height: 90px;
     display: flex;
-    background-color: black;
     justify-content: space-around;
     align-items: center;
 }
 
 .header__div{
+    width: 200px;
     display: flex;
     justify-content: space-between;
+}
 
+.header__principal{
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
 }
 
 .header__text{
-    color: white;
+    background-color: white;
+    color: black;
     padding: 5px;
+    border-radius: 7px;
+}
+
+
+
+body{
+    background: linear-gradient(black,green,black);
 }
 
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7tfhMXDqo4tHfzzUPcM7__QxgeXAWnK5_UTqDeK4u_7gQLxLSsMwiF3PenV6JIBl3J0w&usqp=CAU");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
@@ -50,15 +63,17 @@ form{
     align-content: center;
     justify-content: space-evenly;
     border: 5px solid black;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     background-image: url("https://www.hardware.com.br/filters:format:(png)/@/static/wp/2019/11/01/80.png");
 }
 
-
-
-.msgField{
+.msgField div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
+
 }
 
 #msg{
@@ -70,6 +85,9 @@ form{
 }
 
 .typeField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
 }
 
@@ -78,6 +96,9 @@ form{
 }
 
 .codField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
 }
 
@@ -92,6 +113,9 @@ form{
 }
 
 .resultado{
+    border: 2px black solid;
+    border-radius: 2px;
+    padding: 5px;
     background-color: white;
 }
 
@@ -99,7 +123,6 @@ form{
 footer{
     height: 90px;
     display: flex;
-    background-color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -109,4 +132,15 @@ footer{
 
 .footer__text{
     color: white;
+}
+
+
+@media screen and (max-width:400px){
+    html{
+        font-size: 10px;
+    }
+
+    form{  
+        width: 300px;
+    }
 }

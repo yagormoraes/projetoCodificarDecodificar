@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário - Codificador/Decodificador</title>
     <link href='./style.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=M+PLUS+2:wght@300;500;700&family=Montserrat:wght@100;300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <p class="header__text">Critpografia Bacana</p>
+        <p class="header__principal">Critpografia Bacana</p>
         <div class="header__div">
-            <p class="header__text"><a href="#">Email</a></p>
-            <p class="header__text"><a href="#">LinkedIn</a></p>
-            <p class="header__text"><a href="#">Github</a></p>
+            <p class="header__text"><a href="mailto:yago.dmoraes@gmail.com"><img src="./icons/o-email.png"></a></p>
+            <p class="header__text"><a href="https://www.linkedin.com/in/yagordmoraes/"><img src="./icons/logotipo-do-linkedin.png"></a></p>
+            <p class="header__text"><a href="https://github.com/yagormorares"><img src="./icons/github.png"></a></p>
         </div>
     </header>
 
@@ -21,7 +22,7 @@
         <form>
             <fieldset class="msgField">
                 <div>
-                    <label for="msg" >Digite sua mensagem:</label><br>
+                    <label for="msg" >Digite sua mensagem:</label>
                     <textarea id="msg" name="msg" rows="10" cols="30" required></textarea>
                 </div>
             </fieldset>
@@ -34,7 +35,7 @@
                     <option value="typeCodBase64">Base 64</option>
                 </select><br>
                 <div class="seletorCesar">
-                    <label for="qtdCesar">Coloque o passo que deseja variando entre 1 a 26</label><br>
+                    <label for="qtdCesar">Coloque o passo que deseja variando entre 1 a 26 </label>
                     <input type="number" name="qtdCesar" id="qtdCesar" min=1 max=26>
                 </div>
                 
@@ -61,7 +62,7 @@
 
     <footer>
         <p class="footer__text">Project by Yago R. de Moraes</p><br>
-        <p class="footer__text"> Direitos Autoriais (c) - Para fins educacionais</p>
+        <p class="footer__text"> Direitos Autoriais &copy; - Para fins educacionais</p>
     </footer>
     <script src="./form.js"></script>
 </body>
